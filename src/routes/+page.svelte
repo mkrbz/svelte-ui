@@ -1,5 +1,6 @@
 <script lang="ts">
-    const components = [{ name: "Heatmap", href: "/heatmap" }];
+    import { base } from "$app/paths";
+    const components = [{ name: "Heatmap", href: `${base}/heatmap` }];
 </script>
 
 <div class="p-8 flex flex-col gap-4">
