@@ -50,6 +50,13 @@ export function datesOfWeeks(weeks: number, todaysWeekNr: number): DatesOfWeek[]
     return dow;
 }
 
+/**
+ * Returns the abbreviated month name for a week that contains the 1st of a month.
+ * Used to render month labels above the heatmap columns.
+ *
+ * @param datesOfWeek - The seven dates belonging to a single week.
+ * @returns The 3-letter month name (e.g. `"Apr"`) if the 1st of a month falls in the week, otherwise `""`.
+ */
 export function getMonthFromWeeksDates(datesOfWeek: DatesOfWeek): string {
     const date = datesOfWeek.find((d) => d.getDate() === 1);
     if (!date) return "";
