@@ -6,9 +6,12 @@
 
     let dark = $state(true);
 
+    $effect(() => {
+        document.documentElement.classList.toggle("dark", dark);
+    });
+
     function toggleTheme() {
         dark = !dark;
-        document.documentElement.classList.toggle("dark", dark);
     }
 </script>
 
