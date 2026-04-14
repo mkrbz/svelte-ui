@@ -1,4 +1,4 @@
-import { dateByOffset, dateOnly, firstDateOfTheWeek } from "@lib/utils";
+import { dateByOffset, dateOnly, firstDateOfTheWeek } from "../../utils";
 import type { DatesOfWeek } from "./types";
 
 export const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];

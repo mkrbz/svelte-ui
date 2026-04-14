@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { dateOnly, formatDate } from "@lib/utils";
+    import { dateOnly, formatDate } from "../../utils";
     import { DAYS, datesOfWeeks, getMonthFromWeeksDates } from "./utils";
 
     export type HeatmapData = { date: Date; count: number };
